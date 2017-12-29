@@ -4,12 +4,14 @@ namespace App\Http\Controllers\User;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\User;
+use App\Models\User;
 
 class UserController extends Controller
 {
-    public function userlist(){
+    public function lst(){
         $userData = User::all();
-        var_dump($userData->toArray());
+        if($userData->isNotEmpty()){
+            $this->ajax(1,$userData->toArray(),'');
+        };
     }
 }

@@ -11,4 +11,6 @@
 |
 */
 
-Route::get("/","User\UserController@userlist");
+Route::get("/","User\UserController@lst");
+
+Route::get("/salesContract","Sales\salesController@lst");
