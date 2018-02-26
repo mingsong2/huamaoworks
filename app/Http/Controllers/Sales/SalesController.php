@@ -25,6 +25,10 @@ class SalesController extends Controller
     }
 
     public function add(){
+
+    }
+
+    public function delete(){
         
     }
 }
