@@ -23,4 +23,8 @@ class SalesController extends Controller
 
         echo $data->toJson();exit;
     }
+
+    public function edit(){
+        
+    }
 }
